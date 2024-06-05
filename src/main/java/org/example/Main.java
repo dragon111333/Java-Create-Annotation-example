@@ -6,7 +6,10 @@ public class Main {
     public static void main(String[] args) {
         String line = "------------------------";
         System.out.println(line);
+
         callUseAnnotationClass();
+        callEnumTest();
+
         FindAnnotation.init();
 
         System.out.println(line);
@@ -15,5 +18,9 @@ public class Main {
     private static void callUseAnnotationClass(){
         UseAnnotationClass u = new UseAnnotationClass("THEWIN THAMMA");
         System.out.println(u.getLongName());
+    }
+
+    private static void callEnumTest(){
+        EnumTest.init();
     }
 }
